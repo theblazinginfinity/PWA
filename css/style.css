@@ -1,18 +1,45 @@
 :root {
-    --background-color: #d3fffb;
-    --text-color: #008cff;
+    --background-color: #fff;
+    --text-color: #343434;
+    --graphite: #7c7c7c;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #1b1b1b;
-        --text-color: #e37900;
+        --background-color: #000321;
+        /* --background-color: #423838; */
+        --text-color: #588ad4;
+        /* --text-color: #ea7d00;` */
+        --graphite: #a8bee0;
+        /* --graphite: #dcda9b; */
     }
 }
+
 
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     text-align: center;
-    font-size: 7em;
+    font-family: 'Nunito', sans-serif;
 }
+
+h1 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: var(--graphite);
+}
+
+#meridian {
+    font-size: 2.5rem;
+    color: var(--graphite);
+}
+
+
+
