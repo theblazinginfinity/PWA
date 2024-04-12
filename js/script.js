@@ -15,6 +15,7 @@ function setTime() {
     getMeridian.textContent = getMeridian(now.getHours());
     date.textContent = now.toLocaleDateString('en-US', options);
     timezone = now.toLocaleTimeString('en-US', {timeZoneName: 'long'});
+    timezone.textContent = now.toLocaleTimeString('en-US', -{timeZoneName:-'long'}).substring(11);
 }
 
 setTime();
