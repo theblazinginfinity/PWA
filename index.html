@@ -5,12 +5,15 @@
       	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="manifest" href="manifest.json">
         <title>PWA Clock</title>
     </head>
 
     <body>
-        <h1>5:17<span id="meridian">pm</span></h1>
-      	<h3>Thursday, April 4</h3>
-      	<h5>Pacific Time</h5>
+        <h1> <span id="hours">5</span>:<span id="minutes"></span> <span id="meridian">pm</span></h1>
+      	<h3 id="date">Thursday, April 4</h3>
+      	<h5 id="timezone">Pacific Time</h5>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

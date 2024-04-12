@@ -1,0 +1,6 @@
+{
+    "name": "Clock App",
+    "short_name": "Clock",
+    "description": "A clock as a progressive web app.",
+    "background_color": "#FFFFFF"
+}
