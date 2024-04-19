@@ -1,5 +1,6 @@
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
+const meridian = document.getElementById('meridian');
 const date = document.getElementById('date');
 const timezone = document.getElementById('timezone');        
 
@@ -9,13 +10,12 @@ function setTime() {
     const getMeridian = (hrs) => (hrs < 12) ? 'am' : 'pm';
 
     const options = { weekday: 'long', month: 'long', day: 'numeric'};
-
-    hours.textContent = formatTime(now.getHours() % 12);
+    console.log(now.getHours());
+    hours.textContent = now.getHours() % 12;
     minutes.textContent = formatTime(now.getMinutes());
-    getMeridian.textContent = getMeridian(now.getHours());
+    meridian.textContent = getMeridian(now.getHours());
     date.textContent = now.toLocaleDateString('en-US', options);
-    timezone = now.toLocaleTimeString('en-US', {timeZoneName: 'long'});
-    timezone.textContent = now.toLocaleTimeString('en-US', -{timeZoneName:-'long'}).substring(11);
+    timezone.textContent = now.toLocaleTimeString('en-US', {timeZoneName: 'long'}).substring(11);
 }
 
 setTime();
